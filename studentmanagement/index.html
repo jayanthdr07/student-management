@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+  <aside class="sidebar">
+    <h2 class="logo">?? Student</h2>
+    <ul class="menu">
+      <li class="active" data-page="dashboard">Dashboard</li>
+      <li data-page="courses">Courses</li>
+      <li data-page="marks">Marks</li>
+      <li data-page="attendance">Attendance</li>
+      <li data-page="assignments">Assignments</li>
+      <li data-page="exams">Exams</li>
+      <li data-page="library">Library</li>
+      <li data-page="events">Events</li>
+      <li data-page="fees">Fees</li>
+      <li data-page="profile">Profile</li>
+      <li data-page="logout">Logout</li>
+    </ul>
+  </aside>
+
+  <main class="main">
+    <div class="header">
+      <h1>Welcome, Jayanth</h1>
+      <span class="theme" id="themeToggle">??</span>
+    </div>
+
+    <div id="dashboard" class="page active">
+      <div class="card">
+        <h3>?? Notifications</h3>
+        <ul>
+          <li>Java assignment due tomorrow</li>
+          <li>DSA test on Monday</li>
+          <li>Web project submission</li>
+        </ul>
+      </div>
+      <div class="stats">
+        <div class="card stat"><p>Courses</p><h2>6</h2></div>
+        <div class="card stat"><p>Assignments</p><h2>12</h2></div>
+        <div class="card stat"><p>Attendance</p><h2>92%</h2></div>
+        <div class="card stat"><p>CGPA</p><h2>8.6</h2></div>
+      </div>
+    </div>
+
+    <div id="courses" class="page">
+      <div class="card">
+        <h3>?? My Courses</h3>
+        <ul>
+          <li>Java Programming</li>
+          <li>Data Structures</li>
+          <li>Web Development</li>
+          <li>DBMS</li>
+          <li>Operating Systems</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="marks" class="page">
+      <div class="card">
+        <h3>?? Subject-wise Marks</h3>
+        <table>
+          <tr><th>Subject</th><th>Internal</th><th>External</th><th>Total</th><th>Grade</th></tr>
+          <tr><td>Java Programming</td><td>26</td><td>58</td><td>84</td><td>A</td></tr>
+          <tr><td>Data Structures</td><td>27</td><td>60</td><td>87</td><td>A</td></tr>
+          <tr><td>Web Development</td><td>25</td><td>57</td><td>82</td><td>B+</td></tr>
+          <tr><td>DBMS</td><td>28</td><td>61</td><td>89</td><td>A+</td></tr>
+          <tr><td>Operating Systems</td><td>26</td><td>59</td><td>85</td><td>A</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="attendance" class="page">
+      <div class="card">
+        <h3>?? Subject-wise Attendance</h3>
+        <table>
+          <tr><th>Subject</th><th>Classes Attended</th><th>Total Classes</th><th>Percentage</th></tr>
+          <tr><td>Java Programming</td><td>42</td><td>45</td><td>93%</td></tr>
+          <tr><td>Data Structures</td><td>40</td><td>44</td><td>91%</td></tr>
+          <tr><td>Web Development</td><td>38</td><td>42</td><td>90%</td></tr>
+          <tr><td>DBMS</td><td>41</td><td>44</td><td>93%</td></tr>
+          <tr><td>Operating Systems</td><td>39</td><td>43</td><td>91%</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="assignments" class="page">
+      <div class="card">
+        <h3>?? Assignments</h3>
+        <table>
+          <tr><th>Subject</th><th>Title</th><th>Due Date</th><th>Status</th></tr>
+          <tr><td>Java</td><td>OOP Assignment</td><td>28 Jan 2026</td><td>Pending</td></tr>
+          <tr><td>DSA</td><td>Sorting Problems</td><td>30 Jan 2026</td><td>Completed</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="exams" class="page">
+      <div class="card">
+        <h3>?? Exam Schedule</h3>
+        <table>
+          <tr><th>Subject</th><th>Date</th><th>Time</th><th>Venue</th></tr>
+          <tr><td>Java</td><td>10 Feb 2026</td><td>10:00 AM</td><td>Room 101</td></tr>
+          <tr><td>DSA</td><td>12 Feb 2026</td><td>2:00 PM</td><td>Room 102</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="library" class="page">
+      <div class="card">
+        <h3>?? Library</h3>
+        <table>
+          <tr><th>Book</th><th>Status</th><th>Due Date</th></tr>
+          <tr><td>Clean Code</td><td>Borrowed</td><td>05 Feb 2026</td></tr>
+          <tr><td>Introduction to Algorithms</td><td>Available</td><td>-</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="events" class="page">
+      <div class="card">
+        <h3>?? Events & Notices</h3>
+        <ul>
+          <li>Hackathon on 15 Feb 2026</li>
+          <li>Guest Lecture on AI - 20 Feb 2026</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="fees" class="page">
+      <div class="card">
+        <h3>?? Fees</h3>
+        <table>
+          <tr><th>Fee Type</th><th>Amount</th><th>Status</th></tr>
+          <tr><td>Tuition</td><td>$5000</td><td>Paid</td></tr>
+          <tr><td>Library</td><td>$100</td><td>Pending</td></tr>
+        </table>
+        <button onclick="alert('Redirecting to payment portal')">Pay Fees</button>
+      </div>
+    </div>
+
+    <div id="profile" class="page">
+      <div class="card">
+        <h3>?? Profile</h3>
+        <p><strong>Name:</strong> Jayanth</p>
+        <p><strong>Branch:</strong> Computer Science</p>
+        <p><strong>Year:</strong> 3rd Year</p>
+        <button onclick="alert('Profile editing not implemented')">Edit Profile</button>
+      </div>
+    </div>
+
+    <div id="logout" class="page">
+      <div class="card">
+        <h3>?? Logout</h3>
+        <p>You have been logged out.</p>
+        <button onclick="alert('Session Ended')">Confirm</button>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
