@@ -1,6 +1,6 @@
 # Student Performance Dashboard
 
-A modern, responsive, and fully functional **Student Performance Dashboard** that helps students track their academic progress, attendance, and personal profile information. Built with **HTML, CSS, and JavaScript**, the dashboard is lightweight, mobile-friendly, and features a dark theme for better user experience.asdf
+A modern, responsive, and fully functional **Student Performance Dashboard** that helps students track their academic progress, attendance, and personal profile information. Built with **HTML, CSS, and JavaScript**, the dashboard is lightweight, mobile-friendly, and features a dark theme for better user experience.
 
 ---
 
